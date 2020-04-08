@@ -1,6 +1,6 @@
 Install/Setup Steps:
-1. Download and Extract https://github.com/adampp/P3_UnsupervisedLearning
-    https://github.com/adampp/P3_UnsupervisedLearning.git
+1. Download and Extract https://github.com/adampp/P4_ReinforcementLearning
+    https://github.com/adampp/P4_ReinforcementLearning.git
 
 2. Make sure scikit-learn, numpy, pandas, matplotlib, scipy, gym, and all required dependencies are installed
 with Python 3.6+
