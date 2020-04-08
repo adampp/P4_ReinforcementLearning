@@ -1,0 +1,9 @@
+https://github.com/allanbreyes/gym-solutions/blob/master/analysis/mdp.py
+
+https://github.com/hiive/hiivemdptoolbox/blob/master/playground.ipynb
+
+https://github.com/openai/gym/blob/master/gym/envs/toy_text/frozen_lake.py
+
+https://medium.com/@apoddar573/making-your-own-custom-environment-in-gym-c3b65ff8cdaa
+
+ML4T QLearner

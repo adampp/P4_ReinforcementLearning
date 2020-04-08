@@ -1,0 +1,269 @@
+solver = mdp.QLearning(T, R, 0.99, alpha=0.5, alpha_decay=0.999, alpha_min=0.001,
+        epsilon=1.0, epsilon_min=0.2, epsilon_decay=0.999,
+        n_iter=2e7, run_stat_frequency = 1e4)
+        
+S > > > < > < v v v > > v > v > v < > > > H v v < v > ^ < v < v
+v < v v > v v > H v v > > v v > > v > > v > > > < < < < > v v <
+< < v > < v v > > < < v v > v > < v > > < v < H > v > v < < v v
+^ v v > v v > < > > < > > H > > v < > > v > < > < < < < v v v v
+^ > v H > > v > v < < > > v v > v < > > v v v H > < < < > < H <
+> > > < > v > v > v < H > ^ > > v < v v > > v < > > > < < v < >
+> ^ ^ v v v v ^ v > < < v v > < > > < H > v > v v > < ^ > < v v
+^ ^ > ^ ^ v ^ v > ^ v > v ^ > v > < > v > > < > v > v H < H > v
+^ ^ > v ^ ^ ^ v > ^ ^ > v v > > > > H > > > > v < > v v < < ^ <
+v v > v > v v ^ > < H ^ > ^ v > v v v v v v v > < > v v < < ^ >
+v v > ^ v > ^ > v > v ^ v ^ > > > v > > > > > v > > v v < > < v
+v ^ ^ > < < < H ^ v < > H > H v > > v > v v > v v v < > < < H v
+v v > v > ^ v v > v ^ v v > v > ^ ^ v > v ^ v ^ ^ v v v > > > v
+> ^ > v > ^ > v v ^ ^ > v v > v v ^ ^ v ^ v v > v > < > v v < v
+v > > > < H v ^ v > v > < v > v v < H > v v v > > > v < > v v v
+v v > > > > > ^ v v ^ > v v > ^ ^ v v ^ v v > v > < < v < < < <
+> > > > ^ v > H v < H > > v v < > < H < H > > v v > > v > > v <
+> > v > H v v v > > > v < v > < > > > v ^ > > < < > v < < v v <
+v v ^ v > < > ^ ^ > v > v > > > v v > < v v > > v v < < v v < v
+v v > > ^ > > H > v > ^ v v ^ v > v > ^ v v v > > > v < v v v v
+v > ^ ^ > > v v v v > < > < H v > v v v > v v v v > < < v > < v
+v > < H v ^ > ^ > > v > v > v v > v > > < > > > > v > v < v v <
+^ v ^ v ^ v > v v v ^ > v > v v v ^ v v v > > > v v < < < < < v
+> > > > H > > ^ > ^ ^ v ^ > ^ > > > ^ v ^ v v v < H v < < > < >
+v > ^ > ^ ^ v ^ v > v > > H v H v v v > > > v > > > v v < v ^ v
+v ^ ^ > ^ > ^ ^ ^ > ^ > ^ ^ > v ^ ^ > v v > < v v v > < v > < <
+v > > ^ v v > v > > > > > > v v > > ^ > v > > H > v > < < < ^ <
+> > > > > H > v > ^ ^ v > v v > ^ ^ v > > v > ^ v v > v v < H <
+^ > ^ v v > > v > v H v > v > v < H ^ ^ > ^ > > > ^ v v v v < <
+> v v ^ v > v H v > v > > > v v ^ v v > > ^ > v ^ ^ > < < < < v
+H v v ^ ^ > ^ v > v > v > ^ ^ v v v ^ > v > ^ > > v > ^ v < < v
+v > > H > ^ > ^ ^ v > ^ ^ > v > > v > > ^ > ^ > v v ^ ^ > > > G
+
+
+solver = mdp.QLearning(T, R, 0.99, alpha=0.5, alpha_decay=0.999, alpha_min=0.1,
+        epsilon=1.0, epsilon_min=0.2, epsilon_decay=0.999,
+        n_iter=2e7, run_stat_frequency = 1e4)
+
+S > > > > > > > ^ > > > > > > > > > v > < H > > > > < v < v v <
+^ > > > > v > < H > > > > > > > > v v v v v v ^ > v v < v v v v
+v > > > v > v v v > > > > ^ > v v > v v v v < H > v v v v v v v
+v v v ^ > > v v v > > > < H > v > v > v v v < ^ > v v v v v ^ v
+v v < H > v > v > v > ^ > v > > > v v > v v < H > v v v v < H >
+v v v v v v v > v v < H > v v > > v v ^ > v v v v v v v v v v v
+v v v v > v v > v v v v v > v v v > < H > v v v v v > ^ ^ ^ > >
+v v v v v > v > > v > > v > v v v v ^ v > > v v v v < H < H > v
+v v > > v v > ^ > v ^ > v > v v v < H > v v > v v v v v v v v v
+v v ^ v > v > > > < H > > v ^ > v v v > v v v > v v v v < v < <
+v v v v v > > ^ > v v v ^ ^ ^ > > v > > v v v v v v > > v v ^ v
+v v v v v > < H > v v < H > H > v ^ > > v > v v v > v v v < H >
+v v v v > > v v > v v v v v v > > ^ > > > v v > v v > v v v v v
+v v v v > ^ > > > v > > v > v v > v ^ > > v v > v v v v v v v v
+v v v v < H > > > > > > > > v v v < H > > > v > v v v v v v v v
+v v v v v v > ^ > > ^ > > > > < v < v > ^ > v > > v > v v v v v
+v v v v ^ > < H > < H > v v v > v < H > H > > > > v > v v v v v
+v v v < H > > v v > v < > > v v v v v v v v v > > v v > v v v v
+v v v v v > v ^ > > > > > > > > v > > v > > v v v > v > > v v v
+v v v v > v < H > v > > > > ^ > v v v > v > v > > > > v v v v v
+v > v ^ > v v v v v > > > < H > v v > < v > v v > v v v v v v v
+v v < H > > v > > > v > > v v > > > > v > v v v < > v v v v v v
+v v v v ^ > v > > > v v v ^ ^ > v > > > v v v v v ^ > > v v v v
+v v > < H > > v > > > v > ^ ^ ^ > v > v v v > > < H > v v < v v
+v v v v v > > > v > > > < H < H > v v v v > ^ > > v v v v v v v
+v > > v > > v v > > > v v v v v > > > v v v > ^ > > > v v v v v
+^ > > > v ^ > ^ > v v > > > v v > > > v v v < H > v v v v v ^ v
+v > > > < H > > > > ^ > > > > > > ^ > > v v v v v > > > v < H >
+^ > > > v v > ^ > < H > > v v > < H > > > > > v > > v v v v v v
+> > > > > v < H > v v > > > v > v v > > v > v > > > > > v v v v
+H > ^ ^ > v > v > > > > v > > > > > v > > > > > v v > > > > > v
+v > < H > > > ^ > > > ^ > > > > > > > > > > ^ > > > > > v v ^ G
+
+
+
+solver = mdp.QLearning(T, R, 0.99, alpha=0.5, alpha_decay=0.9999, alpha_min=0.2,
+        epsilon=1.0, epsilon_min=0.2, epsilon_decay=0.9999,
+        n_iter=1e7, run_stat_frequency = 1e4)
+
+S > > > > > > v ^ > > > > v > > v > > > < H > > > > > < < < v v
+^ v > > > > > < H > > v > > > > > v v > v v v ^ > > v v v v v v
+v v v > v > > v v > > > > ^ > > v v > v v v < H > v ^ v v v v v
+v v v ^ > > v > > > > > < H > > v v v > v v < v > v v v v < ^ >
+v v < H > v v > v v v ^ > v > v v v v v v v < H > v v v v < H >
+v v v v > > > > v > < H > > < < v > > ^ > v v v v v < v v v v v
+v v v v > v v v > v v v > > > v < v < H > > v v v v < ^ ^ ^ v >
+v v v > v v v > > > > > v > v v v v ^ v v > < v v v < H > H > v
+v v > > > v > v > v ^ v v v < > < < H > > > > v v > v v v v v v
+v v v v > > > v > < H > > > > > v v v v > > > v v v v < v v > v
+v v v v v v v ^ v > v v ^ ^ ^ > v > > > v > > > v v v v v v ^ ^
+> v v v > v < H > v v < H < H > > v > > > > > v v v > v v < H >
+v v v > > > v v > > v v v v v > > > > > > > > > > v < v > v v v
+v v v > > ^ > > > > v > v v > > > v ^ ^ > > v v > > v v v > < <
+v v v < < H > v v > > > > > v > v < H > > > > v v > v v v v v v
+v v v v v v > ^ > > ^ v v > > v < < ^ > ^ > v v > v v v v v v v
+> v v v ^ > < H > < H > v > > v v < H > H > > v v v v v v v v v
+v > v < H > v v > v v > v > > > > v v v v v > v > > > v v v v v
+v v v v v v > ^ > > > v > ^ > > > v v > v v > > v v v v v v > v
+> ^ > > > v < H > v > v > > ^ > > > > > v > v > v > v v v v v v
+v v > ^ > > v v > > > v > < H > v > > v v > v v v v > v v v > >
+v > < H > > > > > > v > v v v v v > v v > > v > > > > v v v v v
+v v v v ^ > > > > > > > v > > v > v v v v v v v > ^ v v v v v v
+> v > < H > > v > > > v > ^ ^ ^ > > v > v v > v < H > v v > v v
+v > > v v > ^ > > > > > < H < H > v > > > v v v > v v v v v v v
+v > > > > > < > v v > v v v v v > v > > v > v ^ > v v v v v v v
+> > v > > ^ > > > > v > v > v v > v > > v v < H > > v v v v ^ >
+v v v > < H > v > v ^ > > > < > > ^ > v > v v v < > v > v < H >
+^ > v > v v ^ ^ > < H > > > v v < H > v > > > > > v > > > v v >
+^ v > > > > < H > v v > > > v v > v > > > > > > > > v v v v > v
+H > > ^ > > > v > ^ > > > > > > > > > > > > > > > > > > > > v v
+v > < H > > > > > v > > > > > v > v > > > ^ > > > ^ > > > > > G
+
+
+solver = mdp.QLearning(T, R, 0.99, alpha=0.5, alpha_decay=0.9999, alpha_min=0.2,
+        epsilon=1.0, epsilon_min=0.2, epsilon_decay=0.9999,
+        n_iter=5e6, run_stat_frequency = 1e4)
+
+S ^ > v > v > < ^ v > > v > > v > v > > < H v > v > v < < v v v
+^ v > > v > < < H > > > > > > > > > v > v v v ^ > v v < < < > >
+v v > > > v > v v v v > > ^ > > v v v v < > < H > v v < < < v v
+> v > ^ > > v v v v v > < H > > v v ^ v > < v v > v < v v < ^ <
+> > < H > > v > v v v ^ v v > v v v > v v v < H > < v v < < H >
+v v v v v v > > v > < H > v > > > > > ^ > > v v v v < < < < v v
+^ > > > > v v v v v v v > > v > v v < H > v > v v v < ^ ^ ^ > <
+> > v > > v v v > v > > v v > > v v ^ v > v v v v v < H < H > v
+^ > > > > v > v > > ^ > > ^ v > > < H > v > v v v > v v v v v v
+^ > ^ > > v v ^ > < H > > ^ > > v v v > v v > v > < v > v v v v
+> v v < > > > ^ > v v v ^ ^ ^ > > > > v > > v > v > > v v < ^ >
+> > > > v v < H > v v < H > H > v > v v v > v v v v > v v < H >
+^ > > > ^ > v v > > > v v v v v v ^ > > > > > > v < v v v v v v
+> > > > > ^ > v v > v > > v > < > ^ ^ ^ > v ^ v v v v v v v v v
+v > ^ > < H > > > > > > v v v v v < H > ^ > v > v > > > v v v v
+> > ^ > v v > ^ > ^ ^ > > v v v < < v ^ ^ > v v > v v v v v v >
+> v > > ^ > < H > < H > v v > v v < H > H > > v v v v > > v > v
+v > v < H > v v > v v ^ v v > v v v v v v v > v > v v v v v v v
+> > v > v < > ^ > > ^ ^ > > > > > > v > v < > > v v v v v v v v
+v > > > > < < H > > > > v > ^ > v > v < > v > v > > v > v v v v
+^ ^ > ^ v > v v > > v v < < H > < > v > > v > > > v ^ > v v v v
+^ ^ < H > > > v > > v > v v v > v v v v > < > v v < v v v v v v
+^ ^ > v ^ > > > > > > > > ^ v > > v v > > v v v > ^ v > v v v v
+^ ^ > < H > > > > > > > < ^ ^ ^ > v > v > > ^ v < H > v v v v v
+> ^ > > v > > > > > v v < H ^ H > > v v v v v v v v > v v v v v
+^ ^ > > > > > > > v > > v v v v > > v < > v > ^ > > v > v v v v
+> > > ^ ^ ^ > > > > > > > > ^ > v > v v > > < H > > v v v v ^ v
+v > ^ ^ < H > > > > ^ > v v > > ^ ^ > > v < v v > > v v v < H >
+> > ^ v > v > ^ v < H > v > v v < H > > > v > v > > > v v v v v
+^ ^ > > > < < H > v v > > > > > v v ^ > > v > v > v v > > v v v
+H > ^ ^ > > v v > v v > > > > > > > v > > v > > v > v ^ > > > v
+v > < H > > > v > > > > v v > ^ ^ > > > > > > > > v > ^ > ^ > G
+
+
+solver = mdp.QLearning(T, R, 0.99, alpha=1.0, alpha_decay=0.9999, alpha_min=0.2,
+        epsilon=1.0, epsilon_min=0.2, epsilon_decay=0.9999,
+        n_iter=1e6, run_stat_frequency = 1e4)
+        
+S < < < < < < < < < < < < v v v v < < v < H ^ v v < > < < ^ ^ v
+< < < < < < < < H < < ^ v > v v < < > v > < v ^ v v v < < < < ^
+< < < < < < < < < < > ^ > v v v < ^ v > v > v H > v > < < < v >
+< < < < < < < < < < < v < H > ^ v ^ v v ^ v > ^ > < v < v v > <
+< < < H < < < < < v < < < < v > < ^ > < ^ v < H > < v < < < H v
+< < < < < < < < < < < H < < ^ > > v ^ v < v < > > > < ^ < ^ < v
+< < < < < < < < < < > < ^ > ^ > > v > H > v < v < < v < v < ^ ^
+< < < < < < < < < < < ^ > ^ ^ ^ > v ^ v v > v v v < ^ H > H < v
+< < < < < < < < < < < < ^ < ^ < > v H > v > v v > v v v < < < v
+< < < < < < < < < < H < < < < v > < > v v v v > v v < v < < < <
+< < < < < < < < < < < < < < ^ > v > v v < > > v v < < < v v v <
+< < < < < < < H < < < < H < H > v ^ v v v v > > > v < > > < H <
+< < < < < < < < < < < < < < < > ^ ^ ^ ^ v > > > > v v v v v < <
+< < < < < < < < < < < < < < v v > v > > > v ^ v > > < v < v > v
+< < < < < H < < < < < < < < > ^ < < H < > v v v v > v v v v ^ v
+< < < < < < < < < < < < < > < ^ < < > < v v v > v > < < < < ^ <
+< < < < < < < H < < H < < < ^ ^ < < H > H > > > ^ > v < > v v <
+< < < < H < < < < < < < < > ^ < < < < ^ > ^ ^ > ^ > > v v < > v
+< < < < < < < < < < < < < < < < < v > ^ v ^ > ^ ^ > v v < < < <
+< < < < < < < H < < < < < < < > v > < ^ v > v v ^ > v v < v < <
+< < < < < < < < < < < < < < H < v v v v v > ^ v ^ > > v v v v v
+< < < H < < < < < < < < < < < < < > ^ ^ ^ ^ v > > ^ > > v v < ^
+< < < < < < < < < < < < < < < < v ^ v > v ^ v > > ^ v > v v < <
+< < < < H < < < < < < < < < < < < v ^ > ^ > v v < H > > > > < v
+< < < < < < < < < < < < < H < H < < v > < < v > > < > v > v < <
+< < < < < < < < < < < < < < < < < ^ ^ v > > > > v v > v v < v v
+< < < < < < < < < < < < < < < < < v v < v ^ > H > v > > > < ^ v
+< < < < < H < < < < < < < < < < < v v v ^ v > v ^ > > v v < H >
+< < < < < < < < < < H < < < < < < H ^ v ^ v < < < v > v v v v <
+< < < < < < < H < < < < < < < < ^ v v v > v v v ^ v > > > v v v
+H < < < < < < < < < < < < < < < < < > > > v v v ^ v > ^ > > v v
+< < < H < < < < < < < < < < < < < v v v ^ > v > v ^ > < > > v G
+
+
+solver = mdp.QLearning(T, R, 0.99, alpha=1.0, alpha_decay=0.9999, alpha_min=0.2,
+        epsilon=1.0, epsilon_min=0.2, epsilon_decay=0.9999,
+        n_iter=2e6, run_stat_frequency = 1e4)
+        
+S v ^ v > v < < < ^ > > v v > > v v > > < H v > v > < < < v v v
+^ v > v v v < > H < > > v > > v v v > v < v v ^ v v v < < < > >
+v v > > > > v v < v v > > ^ v v v v v > < v < H > v < v v < v v
+> v > ^ v > > > v > < > < H > v v > v v v v v ^ v v v v v v < <
+> > < H > > > v > v v v > v v > > v v v > v < H > v v < ^ v H >
+v v v v v > v v v v < H > > > > v v ^ ^ > v < v v v < < v < v <
+^ > > ^ ^ > v > > v v v > > v v > v < H > v < v v < < ^ < < > <
+> > ^ > ^ > > > > ^ > > v > > > v v ^ v > v v v v < < H > H > <
+^ < < > > > > ^ ^ > ^ ^ > > v v > < H > > > v v > v v v v < < >
+^ ^ ^ > ^ > ^ > > < H > ^ ^ v > > > v > v > v v v v < v < v < v
+> v v > > > ^ ^ ^ ^ v > ^ ^ ^ > > > v > ^ > v v v < < < v v v v
+> > > > ^ > < H > > > < H > H > v > > v v v v v v v v > > < H <
+^ > > ^ ^ > > v > > < > v ^ > > ^ > > > v > > > v v v v v v v v
+> v > > v > ^ v > > > ^ > > > > > ^ ^ > > > > v v v v v v v > v
+v > ^ < < H > > > v > v v > > ^ < < H > ^ > v v v v v v v v v v
+> > ^ ^ ^ v ^ > > ^ ^ v > > v ^ > v v > ^ > > v ^ v ^ v v < ^ <
+> v > > v > < H > < H > v v v v < < H > H > > > > v > v v v v v
+v > > < H > v v v v v > v v v v v v v v v > > v v > > v v v v v
+> v v > v ^ > ^ > ^ > > > > > > > > > > > ^ > > > v v v v v < <
+> v v ^ ^ > < H > > > > > ^ ^ > > ^ > v > > > v > v v > v v v <
+^ ^ > > ^ ^ > ^ > > > ^ ^ < H > > ^ > v > > > > v v > > v v v >
+^ > < H ^ > > > > ^ > > ^ > v > > > > > > > v > > > > < > > < v
+^ ^ < v ^ v > ^ > ^ v > > ^ ^ ^ > ^ > > > > > > v ^ v < v v v v
+^ ^ < < H > > ^ ^ ^ > > ^ ^ ^ v ^ ^ ^ ^ > > > > < H > v < v v v
+> ^ v > > ^ > ^ > ^ > > < H < H ^ ^ ^ > < ^ ^ > v v v > v v v v
+^ ^ ^ > ^ > > > ^ > > < < v ^ < ^ ^ v > > > ^ ^ > > v v v v v v
+> > > v ^ v > ^ ^ > > > < v > > v v > > > < > H > > v > > v ^ >
+v > ^ ^ < H > > ^ ^ > > ^ v < < v > v > v v v v > > > v v < H >
+> > ^ v < > > < ^ > H > > v v v < H v > > v > < < v v v v v v v
+< ^ > v v v > H v > v > v > v v v v v > v > v v v > > v > v v ^
+H < > > > > > > v > > v > v > v v ^ > > v > > > v v v > > v > v
+> > ^ H > ^ v v v > ^ > > > > > > > > > > > > > > > > > v > v G
+
+
+solver = mdp.QLearning(T, R, 0.99, alpha=0.8, alpha_decay=0.9999, alpha_min=0.2,
+        epsilon=1.0, epsilon_min=0.2, epsilon_decay=0.9999,
+        n_iter=2e6, run_stat_frequency = 1e4)
+        
+S v ^ v > v < < < ^ > > v v > > v v > > < H v > v > < < < v v v
+^ v > v v v < > H < > > v > > v v v > v < v v ^ v v v < < < > >
+v v > > > > v v < v v > > ^ v v v v v > < v < H > v < v v < v v
+> v > ^ v > > > v > < > < H > v v > v v v v v ^ v v v v v v < <
+> > < H > > > v > v v v > v v > > v v v > v < H > v v < ^ v H >
+v v v v v > v v v v < H > > > > v v ^ ^ > v < v v v < < v < v <
+^ > > ^ ^ > v > > v v v > > v v > v < H > v < v v < < ^ < < > <
+> > ^ > ^ > > > > ^ > > v > > > v v ^ v > v v v v < < H > H > <
+^ < < > > > > ^ ^ > ^ ^ > > v v > < H > > > v v > v v v v < < >
+^ ^ ^ > ^ > ^ > > < H > ^ ^ v > > > v > v > v v v v < v < v < v
+> v v > > > ^ ^ ^ ^ v > ^ ^ ^ > > > v > ^ > v v v < < < v v v v
+> > > > ^ > < H > > > < H > H > v > > v v v v v v v v > > < H <
+^ > > ^ ^ > > v > > < > v ^ > > ^ > > > v > > > v v v v v v v v
+> v > > v > ^ v > > > ^ > > > > > ^ ^ > > > > v v v v v v v > v
+v > ^ < < H > > > v > v v > > ^ < < H > ^ > v v v v v v v v v v
+> > ^ ^ ^ v ^ > > ^ ^ v > > v ^ > v v > ^ > > v ^ v ^ v v < ^ <
+> v > > v > < H > < H > v v v v < < H > H > > > > v > v v v v v
+v > > < H > v v v v v > v v v v v v v v v > > v v > > v v v v v
+> v v > v ^ > ^ > ^ > > > > > > > > > > > ^ > > > v v v v v < <
+> v v ^ ^ > < H > > > > > ^ ^ > > ^ > v > > > v > v v > v v v <
+^ ^ > > ^ ^ > ^ > > > ^ ^ < H > > ^ > v > > > > v v > > v v v >
+^ > < H ^ > > > > ^ > > ^ > v > > > > > > > v > > > > < > > < v
+^ ^ < v ^ v > ^ > ^ v > > ^ ^ ^ > ^ > > > > > > v ^ v < v v v v
+^ ^ < < H > > ^ ^ ^ > > ^ ^ ^ v ^ ^ ^ ^ > > > > < H > v < v v v
+> ^ v > > ^ > ^ > ^ > > < H < H ^ ^ ^ > < ^ ^ > v v v > v v v v
+^ ^ ^ > ^ > > > ^ > > < < v ^ < ^ ^ v > > > ^ ^ > > v v v v v v
+> > > v ^ v > ^ ^ > > > < v > > v v > > > < > H > > v > > v ^ >
+v > ^ ^ < H > > ^ ^ > > ^ v < < v > v > v v v v > > > v v < H >
+> > ^ v < > > < ^ > H > > v v v < H v > > v > < < v v v v v v v
+< ^ > v v v > H v > v > v > v v v v v > v > v v v > > v > v v ^
+H < > > > > > > v > > v > v > v v ^ > > v > > > v v v > > v > v
+> > ^ H > ^ v v v > ^ > > > > > > > > > > > > > > > > > v > v G
+738.6494576931
+
+
+

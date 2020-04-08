@@ -1,0 +1,378 @@
+adam@DESKTOP-OQRNC3P:~/y/School/ML/Projects/P4_ReinforcementLearning$ python3 test.py
+S v > > < ^ v ^
+v > v < > < > <
+v v > > v H < ^
+^ v ^ > > v ^ <
+H v > > > v ^ ^
+H < v v > v H >
+< > v > > v > <
+v ^ v > > ^ v G
+runtime=0.5987410545349121 sec
+average reward=0.09
+average iterations=36.3
+adam@DESKTOP-OQRNC3P:~/y/School/ML/Projects/P4_ReinforcementLearning$ python3 test.py
+S > > v > > > <
+v v > v v ^ > <
+v v > v < H > v
+^ > v v > v v v
+H > v > v v ^ v
+H > v > > < H >
+v > > > > v v v
+v v > > > > v G
+runtime=183.43406748771667 sec
+average reward=1.0
+average iterations=56.54
+adam@DESKTOP-OQRNC3P:~/y/School/ML/Projects/P4_ReinforcementLearning$ python3 test.py
+S > > v > > > <
+v v > v v ^ > <
+v v > v < H > v
+^ > v v > v v v
+H > v > v v ^ v
+H > v > > < H >
+v > > > > v v v
+v v > > > > v G
+runtime=185.04693865776062 sec
+average reward=1.0
+average iterations=59.54
+185.10778903961182
+adam@DESKTOP-OQRNC3P:~/y/School/ML/Projects/P4_ReinforcementLearning$ python3 test.py
+S v > v > v < < v ^ > > v v > > v v > > < H v > v > < < < v v v
+^ v > > v v < > H > > > v > > v v v > v < v v ^ v v v < < < > >
+v v > > > > v v v v v > > ^ v v v v v > v v < H > v v v v < v v
+> v > ^ ^ > > > v > < > < H > v v > v v v v < v > v v v < < ^ <
+> > < H > > v v v v v ^ > v v v > v > > v v < H > v v < < < H >
+v v v v > > > v v v < H > > > v v v v ^ > v v v v v < < < < v <
+^ > > ^ > > > > v v v v v v v v v v < H > > v v v v < ^ v ^ > <
+> > ^ > ^ > > > > v > > > v v ^ v < ^ v > v v v v < < H > H > <
+^ < < > > > > > > v ^ > > v v > v < H > v > > v > v v v v < < >
+^ ^ ^ > ^ > > > > < H > > > > > v v v > > v > v v v > v < v < v
+> v v > > > ^ ^ ^ > v > ^ ^ ^ > v v > > > > v > < v v v v v ^ v
+> > > > ^ > < H > > > < H > H > > > > > > v ^ v v < v v v < H >
+^ > > ^ ^ > > v > > > > v v v > > > > > v > > > > > ^ v v v v v
+> > ^ > ^ ^ ^ v > > > ^ > > > > v > ^ ^ > > v v > ^ < v v v v >
+v > ^ < < H > > > v > v v v > v v < H > > > > > > v v v < < v v
+> > ^ ^ v v > ^ > > ^ > > v v v v < v > ^ > > > v v v v v v v v
+> v > > ^ > < H > < H > v v v v v < H > H > v ^ > > > > > v v >
+v > > < H > v v > v v > v > v > > v v v v > > > v < > v < v v v
+> v > v v > > ^ > > > > > > v > v > > v > < v v v v v v v > v >
+> v > > ^ > < H > > > > > > ^ > > v > > v > v v > > v > v v v v
+^ ^ ^ ^ ^ ^ > v > > > > > < H > > > > > > v v ^ v > v v < v v v
+^ > < H > > > > > ^ > > > > v > > > > > > v v v v > v v v v v v
+^ ^ < v ^ v > ^ > > ^ > > > > > > > > > > v v v v ^ v v v v v v
+^ ^ < < H > > ^ ^ ^ > > > ^ ^ ^ ^ ^ ^ > > v > v < H > v v v v v
+> ^ v > v ^ > ^ > ^ > > < H < H > ^ ^ > v > v v v v v v v v v v
+^ ^ ^ > ^ > > > ^ > > > < v ^ v ^ ^ v > > v > ^ v > v v v v v v
+> > > ^ ^ ^ ^ > ^ > > > < v > > v v > > v > < H > > v > > v ^ v
+v > ^ ^ < H > > ^ ^ ^ > v v v < v ^ v > v v > v v > v v v < H >
+> > ^ v < v < v ^ > H > > v v v < H > > v > > v > > > v v v v v
+^ ^ > > v v > H > > v > > v v > v v v > > > > ^ v v > > ^ > > v
+H ^ > ^ > > > v v > > > > > > > v > > > > > > > > > > > v v > v
+> > ^ H > ^ > ^ v > ^ > > > > > > > v ^ > > > > > > > > > v v G
+runtime=1129.6720068454742 sec
+average reward=1.0
+average iterations=254.95
+Traceback (most recent call last):
+  File "test.py", line 110, in <module>
+    print(time.time() - teststart)
+NameError: name 'teststart' is not defined
+adam@DESKTOP-OQRNC3P:~/y/School/ML/Projects/P4_ReinforcementLearning$ python3 test.py
+S v > v > v < < v ^ > > v v > > v v > > < H v > v > < < < v v v
+^ v > > v v < > H > > > v > > v v v > v < v v ^ v v v < < < > >
+v v > > > > v v v v v > > ^ v v v v v > v v < H > v v v v < v v
+> v > ^ ^ > > > v > < > < H > v v > v v v v < v > v v v < < ^ <
+> > < H > > v v v v v ^ > v v v > v > > v v < H > v v < < < H >
+v v v v > > > v v v < H > > > v v v v ^ > v v v v v < < < < v <
+^ > > ^ > > > > v v v v v v v v v v < H > > v v v v < ^ v ^ > <
+> > ^ > ^ > > > > v > > > v v ^ v < ^ v > v v v v < < H > H > <
+^ < < > > > > > > v ^ > > v v > v < H > v > > v > v v v v < < >
+^ ^ ^ > ^ > > > > < H > > > > > v v v > > v > v v v > v < v < v
+> v v > > > ^ ^ ^ > v > ^ ^ ^ > v v > > > > v > < v v v v v ^ v
+> > > > ^ > < H > > > < H > H > > > > > > v ^ v v < v v v < H >
+^ > > ^ ^ > > v > > > > v v v > > > > > v > > > > > ^ v v v v v
+> > ^ > ^ ^ ^ v > > > ^ > > > > v > ^ ^ > > v v > ^ < v v v v >
+v > ^ < < H > > > v > v v v > v v < H > > > > > > v v v < < v v
+> > ^ ^ v v > ^ > > ^ > > v v v v < v > ^ > > > v v v v v v v v
+> v > > ^ > < H > < H > v v v v v < H > H > v ^ > > > > > v v >
+v > > < H > v v > v v > v > v > > v v v v > > > v < > v < v v v
+> v > v v > > ^ > > > > > > v > v > > v > < v v v v v v v > v >
+> v > > ^ > < H > > > > > > ^ > > v > > v > v v > > v > v v v v
+^ ^ ^ ^ ^ ^ > v > > > > > < H > > > > > > v v ^ v > v v < v v v
+^ > < H > > > > > ^ > > > > v > > > > > > v v v v > v v v v v v
+^ ^ < v ^ v > ^ > > ^ > > > > > > > > > > v v v v ^ v v v v v v
+^ ^ < < H > > ^ ^ ^ > > > ^ ^ ^ ^ ^ ^ > > v > v < H > v v v v v
+> ^ v > v ^ > ^ > ^ > > < H < H > ^ ^ > v > v v v v v v v v v v
+^ ^ ^ > ^ > > > ^ > > > < v ^ v ^ ^ v > > v > ^ v > v v v v v v
+> > > ^ ^ ^ ^ > ^ > > > < v > > v v > > v > < H > > v > > v ^ v
+v > ^ ^ < H > > ^ ^ ^ > v v v < v ^ v > v v > v v > v v v < H >
+> > ^ v < v < v ^ > H > > v v v < H > > v > > v > > > v v v v v
+^ ^ > > v v > H > > v > > v v > v v v > > > > ^ v v > > ^ > > v
+H ^ > ^ > > > v v > > > > > > > v > > > > > > > > > > > v v > v
+> > ^ H > ^ > ^ v > ^ > > > > > > > v ^ > > > > > > > > > v v G
+runtime=1085.762907743454 sec
+average reward=0.99
+average iterations=264.09
+adam@DESKTOP-OQRNC3P:~/y/School/ML/Projects/P4_ReinforcementLearning$ python3 test.py
+^CTraceback (most recent call last):
+  File "test.py", line 69, in <module>
+    solver.run()
+  File "/home/adam/y/School/ML/Projects/P4_ReinforcementLearning/hiivemdptoolbox/hiive/mdptoolbox/mdp.py", line 1167, in run
+    p = p + self.P[a][s, s_new]
+KeyboardInterrupt
+adam@DESKTOP-OQRNC3P:~/y/School/ML/Projects/P4_ReinforcementLearning$ python3 test.py
+S ^ > v > v > < ^ v > > v > > v > v > > < H v > v > v < < v v v
+^ v > > v > < < H > > > > > > > > > v > v v v ^ > v v < < < > >
+v v > > > v > v v v v > > ^ > > v v v v < > < H > v v < < < v v
+> v > ^ > > v v v v v > < H > > v v ^ v > < v v > v < v v < ^ <
+> > < H > > v > v v v ^ v v > v v v > v v v < H > < v v < < H >
+v v v v v v > > v > < H > v > > > > > ^ > > v v v v < < < < v v
+^ > > > > v v v v v v v > > v > v v < H > v > v v v < ^ ^ ^ > <
+> > v > > v v v > v > > v v > > v v ^ v > v v v v v < H < H > v
+^ > > > > v > v > > ^ > > ^ v > > < H > v > v v v > v v v v v v
+^ > ^ > > v v ^ > < H > > ^ > > v v v > v v > v > < v > v v v v
+> v v < > > > ^ > v v v ^ ^ ^ > > > > v > > v > v > > v v < ^ >
+> > > > v v < H > v v < H > H > v > v v v > v v v v > v v < H >
+^ > > > ^ > v v > > > v v v v v v ^ > > > > > > v < v v v v v v
+> > > > > ^ > v v > v > > v > < > ^ ^ ^ > v ^ v v v v v v v v v
+v > ^ > < H > > > > > > v v v v v < H > ^ > v > v > > > v v v v
+> > ^ > v v > ^ > ^ ^ > > v v v < < v ^ ^ > v v > v v v v v v >
+> v > > ^ > < H > < H > v v > v v < H > H > > v v v v > > v > v
+v > v < H > v v > v v ^ v v > v v v v v v v > v > v v v v v v v
+> > v > v < > ^ > > ^ ^ > > > > > > v > v < > > v v v v v v v v
+v > > > > < < H > > > > v > ^ > v > v < > v > v > > v > v v v v
+^ ^ > ^ v > v v > > v v < < H > < > v > > v > > > v ^ > v v v v
+^ ^ < H > > > v > > v > v v v > v v v v > < > v v < v v v v v v
+^ ^ > v ^ > > > > > > > > ^ v > > v v > > v v v > ^ v > v v v v
+^ ^ > < H > > > > > > > < ^ ^ ^ > v > v > > ^ v < H > v v v v v
+> ^ > > v > > > > > v v < H ^ H > > v v v v v v v v > v v v v v
+^ ^ > > > > > > > v > > v v v v > > v < > v > ^ > > v > v v v v
+> > > ^ ^ ^ > > > > > > > > ^ > v > v v > > < H > > v v v v ^ v
+v > ^ ^ < H > > > > ^ > v v > > ^ ^ > > v < v v > > v v v < H >
+> > ^ v > v > ^ v < H > v > v v < H > > > v > v > > > v v v v v
+^ ^ > > > < < H > v v > > > > > v v ^ > > v > v > v v > > v v v
+H > ^ ^ > > v v > v v > > > > > > > v > > v > > v > v ^ > > > v
+v > < H > > > v > > > > v v > ^ ^ > > > > > > > > v > ^ > ^ > G
+runtime=1860.997661113739 sec
+average reward=0.99
+average iterations=236.06
+adam@DESKTOP-OQRNC3P:~/y/School/ML/Projects/P4_ReinforcementLearning$ python3 test.py
+S > > < > > > >
+v v v v v ^ > v
+v < v v < H > <
+^ > > v v v v v
+H > v > v < ^ >
+H > v v v < H >
+v v > > v v v v
+v > v > v > > G
+runtime=313.9915671348572 sec
+average reward=1.0
+average iterations=59.87
+adam@DESKTOP-OQRNC3P:~/y/School/ML/Projects/P4_ReinforcementLearning$ python3 test.py
+S > > > > > > >
+v v > v v ^ > v
+v v v v < H > v
+^ > v v v v v v
+H > > v v v ^ v
+H > v v v < H >
+v v > > > v v v
+v > > > > > > G
+runtime=306.5930218696594 sec
+average reward=1.0
+average iterations=52.56
+adam@DESKTOP-OQRNC3P:~/y/School/ML/Projects/P4_ReinforcementLearning$ python3 test.py
+S > v > ^ > > < v > v < > > v > v > < v < H > ^ > < ^ > > > > >
+> > ^ v > v > < H > > v ^ > > v > > > v v v < ^ > < > < > v v >
+v v > > > v > v v > v ^ > ^ > v v > v > v > < H > < v v v v ^ <
+> > v ^ v > < > ^ v > > < H > v v > v > v v < v > v v v v v ^ v
+v v < H > > > ^ > > v ^ > v > > > v > > v v < H > v v v v < H >
+v v v v < v > > > v < H > < > > v v > ^ > v v v v v < v v v v v
+v < > > v > < v v v > v v > > v > v < H > v v v v v v ^ ^ ^ > v
+> > v v v > ^ v > > > > ^ v v v v v ^ v v v v v v v < H > H > v
+v v v v ^ v > > < v ^ v > > > > v < H > > v v v v v v v v v v v
+v v v v ^ v < > v < H > > > > > > v v > > v v v v v v v v v v v
+^ > v v v v ^ ^ > v v v ^ ^ ^ > > v > > v > > v > v v v v v ^ v
+v < ^ > v v < H > v > < H > H > > > > > > v v v > v v v v < H >
+> v v v v v v v v > > v v v v v > > > > > > v v v v v v v v v v
+v v v ^ > ^ > v > > > v > v v v v v ^ > > > > v v v v v v v v v
+v > v v < H > > v > > > v v v v v < H > > > v v > v v v v v v v
+v v v v v v v ^ > ^ ^ > > v v v v < ^ > ^ > > v v v v v v v v v
+v > v v ^ > < H > < H > > v > v v < H > H > v > v v v v v v v v
+> v v < H > v v > v v > > > v v v v v v v v v v v v v v v v v v
+v v v v v v > ^ > > > > > > > > v > v v v v v v > v > v v v v v
+v v v > v > < H > > > > v > ^ > > v v v v v > > > > v v v v v v
+v v v ^ v v v v > v > > v < H > v v > v v v v v v > v > v v v v
+> > < H > > v v > > v > v v v > > > > > > > v > v > > v v v v v
+v v > v ^ > v > > v > > v > > > > v > v v v v v v ^ > v v v v v
+v v > < H > v v > v > v v ^ ^ ^ > > v > v v v v < H > v v v v v
+< v > > v > > > > > v v < H < H > > > v v > > v v v v v v v v v
+v v ^ > > v > > > > > > v v v v > > v > v v v ^ > v v v v v v v
+> v > > > ^ > > > > > > v > > > > > > v v v < H > v > v v v ^ v
+< v ^ > < H > > > > ^ > > > > > > ^ > v v v v v > v > v v < H >
+< > > > > v > ^ > < H > > > > > < H > > > > > > > > > v > v v v
+^ v > > > > < H > > v > > > > > v v > > > > > > > > > > > > > v
+H > ^ ^ > v v v > > > > > > > > > > > > > > > > > > > > > > > v
+> > < H > > > > > > > > > > > > > > > > > > > > > > > > > > > G
+runtime=1933.020245552063 sec
+average reward=0.99
+average iterations=226.06
+adam@DESKTOP-OQRNC3P:~/y/School/ML/Projects/P4_ReinforcementLearning$ python3 test.py
+^CTraceback (most recent call last):
+  File "test.py", line 69, in <module>
+    solver.run()
+  File "/home/adam/y/School/ML/Projects/P4_ReinforcementLearning/hiivemdptoolbox/hiive/mdptoolbox/mdp.py", line 1186, in run
+    v = self.Q.max(axis=1)
+  File "/home/adam/.local/lib/python3.6/site-packages/numpy/core/_methods.py", line 30, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+KeyboardInterrupt
+adam@DESKTOP-OQRNC3P:~/y/School/ML/Projects/P4_ReinforcementLearning$ python3 test.py
+S > > v > v v > ^ > > v > > > > > > > > < H > v > v > > < v v v
+> < > ^ > v > < H > > ^ > ^ > > > > > > v v < ^ > < v v v < < v
+< > > > v < > v v > > > > ^ v > v v v v v v < H > v < v < v v v
+v ^ > ^ > > ^ v > > > > < H > > > > > > > v < v > v < v v < ^ >
+< v < H > > v v > ^ > ^ > v > > v > v > v v < H > v v v v < H >
+> v > v v v v > > > < H > v > v v > > ^ v > v v v v v v v v v <
+< > > v > ^ ^ v > v v v > v > v v v < H > v > > v v v ^ ^ ^ > v
+v v v < > v > > > > > v v > > v v v ^ v > > > v v v < H > H > v
+< v v > < v v > > > ^ > v > > v v < H > v v v > v v v v v v v v
+v v v > > > > > > < H > > v > > ^ v v v v > v v v v v v v v v v
+> v v ^ v v > ^ > v v v ^ ^ ^ > v v > > v v v v v > v v v v ^ v
+v > v v > v < H > v v < H > H > v > > > v v v v > > v v v < H >
+v v v v > v v v v v v v v v v v v > > > > > v v v > v v v v v v
+v v v v > ^ v v v v v > v v v v v > ^ > > v v v > v v v v > v v
+v > > v < H > > v v > > v v > v v < H > > > > v > v > v v > > v
+v v v v v v > ^ > > ^ > v v v v > < v > ^ > v v v > > v v v > v
+v v v > ^ > < H > < H > v v v > v < H > H > v v v > > v v v < v
+v v v < H > v v > v v > > > > ^ v > v v v v > v v v v > v > v v
+v v v v v v > ^ > > > > > v > > > > v > > > > > v > v > v v v v
+v v > v v v < H > > v v > > ^ > > > v v > v v v > > > v v v v v
+v v > ^ > v v v > > > > > < H > > > v > v > > > v > v v v v v v
+v v < H > > > > > > > > v v v > > v v v > > v v > ^ v v v v v v
+v v v v ^ > > > > v v > > > > > > v > v v > v v v ^ > v v v v v
+v v v < H > > v > > v v > ^ ^ ^ v > > > v v > > < H > v v v v v
+v v > ^ v > > > > v v > < H > H > > v v > ^ > v v v > v v v v v
+v > > ^ > > > > > > > v v v v v > > > v v < v ^ v v > v v v v v
+v > v > v ^ > > > > > > > > > > > > v > > v < H > v v > v > ^ >
+> > > > < H > > > > ^ > > > > v v ^ > > v > v v > > > > > < H >
+v > > > v v > ^ > < H > > > > > < H > > > ^ > > v > v > v v v v
+^ > > > > > < H > v v > > > > > > v > > v > > > > > v > v v v v
+H > ^ ^ > v > v > > > > > > > ^ v > > > > > > > > > > > > > > v
+v > < H > > > > > > > > > > > > > > > > > > > > > > > > > v > G
+runtime=1925.934416770935 sec
+average reward=1.0
+average iterations=240.93
+adam@DESKTOP-OQRNC3P:~/y/School/ML/Projects/P4_ReinforcementLearning$ python3 test.py
+^CTraceback (most recent call last):
+  File "test.py", line 69, in <module>
+    solver.run()
+  File "/home/adam/y/School/ML/Projects/P4_ReinforcementLearning/hiivemdptoolbox/hiive/mdptoolbox/mdp.py", line 1191, in run
+    run_stats.append(self._build_run_stat(i=n, s=s, a=a, r=r, p=p, v=v, error=error))
+  File "/home/adam/y/School/ML/Projects/P4_ReinforcementLearning/hiivemdptoolbox/hiive/mdptoolbox/mdp.py", line 1253, in _build_run_stat
+    'Mean V': _np.mean(v),
+  File "<__array_function__ internals>", line 6, in mean
+  File "/home/adam/.local/lib/python3.6/site-packages/numpy/core/fromnumeric.py", line 3335, in mean
+    out=out, **kwargs)
+  File "/home/adam/.local/lib/python3.6/site-packages/numpy/core/_methods.py", line 151, in _mean
+    ret = umr_sum(arr, axis, dtype, out, keepdims)
+KeyboardInterrupt
+adam@DESKTOP-OQRNC3P:~/y/School/ML/Projects/P4_ReinforcementLearning$ ^C
+adam@DESKTOP-OQRNC3P:~/y/School/ML/Projects/P4_ReinforcementLearning$ python3 test.py
+^CTraceback (most recent call last):
+  File "test.py", line 69, in <module>
+    solver.run()
+  File "/home/adam/y/School/ML/Projects/P4_ReinforcementLearning/hiivemdptoolbox/hiive/mdptoolbox/mdp.py", line 1167, in run
+    p = p + self.P[a][s, s_new]
+KeyboardInterrupt
+adam@DESKTOP-OQRNC3P:~/y/School/ML/Projects/P4_ReinforcementLearning$ python3 test.py
+S v > > > v > > ^ > > > > > > > > > > > < H > > > > > > > v > <
+< > > v > > > < H > > > > > > > > > v v v v v ^ > > v v v v v v
+< v v > > > v v v > > > > ^ > v > v v > v v < H > v v v v v v v
+v v v ^ v > v > v > > > < H > > > v > v v v < ^ > v v v v v ^ v
+v v < H > v > v > v v ^ > v > > v v > > v > < H > < v v v < H >
+v v v v > v > > > > < H > v > v v v > ^ > v v v v v v v v v v v
+v v v > v v v v v v v v v > > v v > < H > v v v v < v ^ ^ ^ > v
+v v > > > v > > > > > > > v > v v v ^ v > > > v v v < H > H > v
+v v v v > > > > v > ^ v > > > v v < H > v > v v v v v v v v v v
+v v v v v v > > v < H > > > v v v v v > v > v v v v v v v v v v
+v v v v > > v ^ > v v v ^ ^ ^ > v > > v v v > v > > v v v < ^ v
+v v v v > > < H > v v < H > H > v > > > < v v > v > v v v < H >
+v v v > ^ > v v > v v v v v v > > > > > < v > v v v v v v v v v
+v v v v > ^ > > > > > > v v v v v > ^ > > v v v v v v v v v v v
+v v v v < H > > > > > > v > v v v < H > > v > v > v v v > v v v
+v v v v v v > ^ > > ^ > v v v v v < v > ^ > > > > > v > v > v v
+v v v v ^ > < H > < H > > > v v v < H < H > v v v v v > v v < v
+v v v < H > v v > v v > > > > > v v v v v v v v v > > v > v v v
+v v v > v v v ^ > > v > > > ^ > > > v > ^ > ^ > < > v > v v > v
+v v > > ^ < < H > > > > ^ > ^ > v > > v > > > v v v v v v v v v
+v v > ^ > > > v > > ^ > > < H > > v > v v > v v v v v > v v v v
+v > < H > > v > > v > v > > v > v v v v v > > > > v v > v v v v
+v v v v ^ > v v > > ^ > > v > > > v v v > v v v v ^ > v v v v v
+v v > < H > > v v > v > > ^ ^ ^ > v v v > v v > < H > v v v v v
+v v > v v > > > > > v > < H < H > > v > > v v ^ v v v v > v v v
+v > > > > > v > > v v v v v v v > v > > > v > ^ > > > > v v v v
+v > > > > ^ > > > > v > > v > > > > v > v v < H > v v v v v ^ v
+v > > > < H > > > > ^ > > v > > v ^ > > v v v v v > > v v < H >
+^ > > > v v > ^ > < H > > > > > < H > > > > > > v v > > > v v <
+^ > > > > > < H > > v > > > > > v v > > > v > ^ > > v > > > v v
+H > ^ ^ > > > v > v > > > > > ^ > > > > > > > > > > > v > > > v
+v > < H > > ^ > > > > > > > > > > > > ^ > > ^ > > ^ > > > > ^ G
+runtime=1936.7346913814545 sec
+average reward=1.0
+average iterations=235.72
+adam@DESKTOP-OQRNC3P:~/y/School/ML/Projects/P4_ReinforcementLearning$ python3 test.py
+S < > > v v > > ^ > > > > > > > > > v v < H > > > < > < v > < <
+< < > v ^ > > < H > > > > > > > > > > v v v v ^ > v v v v v v v
+> v ^ > > v v v v > > > > ^ > v > v > v v > < H > v v v < v v <
+v v > ^ > > > > v > > > < H > > > v > > v v < v > > v v v v ^ v
+> > < H > v > > > > > ^ > v > v v v v > > v < H > v v v v < H >
+v v < v v v > > v < < H > > > > v v > ^ > v v v v v < v v v v v
+v v v v > v v v v v v v > > > v v v < H > v v v v v < ^ ^ ^ v v
+v > v v > > > > v v > > > > v > v v ^ v > v v v v v < H > H > v
+v v v v v > v > > > ^ > > > > v < < H > > v v v v v v v v v v v
+v v v v v > > v v < H > ^ > > > v v v > v > > v v v v v v v v v
+v v v v > v > ^ > v v v ^ ^ ^ > > v > > v > > v v v > v v v ^ v
+v v v v > > < H > > v < H < H > v > > > > > v > > v v v v < H >
+v v v v v v > v > > v v v v v v > > > > > > > v v v v v > v v v
+v v > v v ^ > > > v v > > v ^ ^ > v ^ > > > > v v v v v v v v >
+v v v v < H > > > > v > v > v v v < H > > > v v v v v v v v v v
+v v v v > v > ^ > > ^ > > v v v > < v > ^ > v v v v v v v v v v
+v v v v ^ v < H > < H > > > > v v < H > H > v v v v v v v v v v
+v v v < H > v v > v v > > > > v v v v v v > v v > v > > > v v >
+v v v v v v v ^ > > > > > > > > v v v v ^ > > v v > v > v v v v
+v v > > > v < H > v v > > > ^ > v v > v v v v v > > v > v v v v
+v v v ^ > v v v ^ > > v v < H > v > > > > > v v v > v v > v v v
+v v < H > v > > v > v v v v v > v v > v > > v > v > v v v v v v
+v v v v ^ > v > v v v v v v > > > > v v v v v v v ^ > v v v v v
+v > > < H > v v v < v > > ^ ^ ^ > > v > > v v v < H > v v v v v
+v v > v v ^ v > > > v v < H < H > > > > > > > > v v v > v v v >
+v > > v > > > > ^ v > v v v v v > > > > > v v ^ v v v > v v v v
+v > > > > ^ > > > > ^ > > > > v > > > > v > < H > > > v > v ^ <
+v > > > < H > > > > ^ > v > > > > ^ > > > v v v > < v > v < H >
+^ > > > > v v ^ > < H > > > > > < H > > > > v > > v v v > v v v
+^ > > > v > < H > v v > > > > > v v > v > > > > > > > v v > v v
+H > ^ ^ > v v v > > > > > v > > > > v > > v > > > v > > v v v v
+v > < H > > > > > > > > > > v > > > > > > > > > > v v > ^ v > G
+runtime=2343.604768514633 sec
+average reward=1.0
+average iterations=228.07
+adam@DESKTOP-OQRNC3P:~/y/School/ML/Projects/P4_ReinforcementLearning$ python3 test.py
+S > > > > > > >
+v > > v > ^ > v
+v v v v < H > <
+^ v v v v v v v
+H > > v v v ^ v
+H > > v > < H >
+v > > > > > v v
+v v v > v > v G
+runtime=374.84089756011963 sec
+average reward=1.0
+average iterations=58.46
+adam@DESKTOP-OQRNC3P:~/y/School/ML/Projects/P4_ReinforcementLearning$ python3 test.py
+(0, 0, 0, 0)
+runtime=220.49637603759766 sec
+average reward=26200.0
+average iterations=1000.0
+adam@DESKTOP-OQRNC3P:~/y/School/ML/Projects/P4_ReinforcementLearning$ python3 test.py
+(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+runtime=230.47256326675415 sec
+average reward=279.2
+average iterations=1000.0
+adam@DESKTOP-OQRNC3P:~/y/School/ML/Projects/P4_ReinforcementLearning$
