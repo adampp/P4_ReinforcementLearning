@@ -37,9 +37,9 @@ def evaluateRT(problem, mutate=False):
 
 #############################
 ## forest or frozen
-problem = 'forest'
+problem = 'frozen'
 ## pi, vi, q
-algo = 'q'
+algo = 'pi'
 #############################
 if problem == 'frozen':
     np.random.seed(1)
